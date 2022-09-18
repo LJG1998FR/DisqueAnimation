@@ -93,8 +93,8 @@
 .buttons {
     position:absolute;
     margin:auto;
-    top:250px;
-    left:260px;
+    top: 330px;
+    left: 185px;
     bottom:0;
     right:0;
     width:10px;
@@ -159,7 +159,7 @@
     left: -2px;
     right: 0;
     bottom: 0;
-    top: 300px;
+    top: 175px;
     width: 20px;
     height: 30px;
     border-radius: 20%;
@@ -207,4 +207,31 @@
     content: "";
     width: 160px;
     height: 160px;
+}
+
+.spin {
+    animation: spin 4s linear infinite;
+}
+
+.oscillating {
+    animation: oscillating 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes oscillating {
+    0% {transform: rotate(20deg);}
+    30% {transform: rotate(20.5deg);}
+
+    60% {transform: rotate(20deg);}
+    90% {transform: rotate(20.5deg)}
+
+    100% {transform: rotate(20deg);}
 }
